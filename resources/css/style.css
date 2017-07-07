@@ -10,7 +10,7 @@ html {
 /* Navigation */
 nav {
   /*display: inline-flex;*/
-  border: 1px red solid;
+/*  border: 1px red solid;*/
   width:100%;
   display: flex;
   align-content: center;
@@ -18,7 +18,7 @@ nav {
 }
 
 nav .links {
-  border: 1px red solid;
+/*  border: 1px red solid;*/
   display: flex;
   justify-content: flex-end;
 
@@ -34,7 +34,7 @@ nav ul {
 nav .logo {
 display:flex;
 justify-content: flex-start;
-border: 1px red solid;
+/*border: 1px red solid;*/
 }
 
 ul .links {
@@ -45,4 +45,64 @@ ul .links {
 
 .links li {
   margin-right: 1rem;
+}
+
+
+
+/* Banner */
+
+.banner {
+  /*border: 1px red solid;*/
+  /*height:30rem;*/
+  width:100%;
+  background-color: gray;
+  }
+
+  .banner .all {
+    /*border: 1px red solid;*/
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image,.txtbtn{
+    padding-top: 32px;
+    flex-direction: column;
+  }
+
+
+
+.image {
+  display: flex;
+  /*border: 1px red solid;*/
+  width:60%;
+  margin-right:40px;
+  margin-left:24px;
+  margin-bottom: 32px;
+}
+
+.image img {
+width:100%;
+/*border: 1px red solid;*/
+
+}
+
+.all {
+  display: flex;
+}
+
+
+.txtbtn h1 {
+  font-size: 2rem;
+  justify-content: center;
+  border: 1px red solid;
+
+}
+
+.txtbtn span {
+  margin-top: 2rem;
+  border:1px red solid;
+}
+
+.txtbtn,span {
+  justify-content: center;
 }
