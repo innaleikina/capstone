@@ -55,7 +55,7 @@ ul .links {
   /*border: 1px red solid;*/
   /*height:30rem;*/
   width:100%;
-  background-color: gray;
+  background-color: lightgray;
   }
 
   .banner .all {
@@ -90,19 +90,50 @@ width:100%;
   display: flex;
 }
 
-
-.txtbtn h1 {
-  font-size: 2rem;
-  justify-content: center;
-  border: 1px red solid;
-
+.txtbtn{
+/*  border: 1px red solid;*/
+  width:50%;
 }
 
+
+.txtbtn .learn {
+  font-size: 2rem;
+  justify-content: center;
+  /*border: 1px red solid;*/
+  width:auto;
+}
+
+
 .txtbtn span {
-  margin-top: 2rem;
-  border:1px red solid;
+  margin-top: .8rem;
+  /*border:1px red solid;*/
+
 }
 
 .txtbtn,span {
   justify-content: center;
 }
+
+.start-btn{
+  width:auto;
+  margin-top:2rem;
+  /*border:1px red solid;*/
+
+}
+
+.start-btn span {
+  background-color: white;
+  padding: .5rem ;
+  border:.5px solid darkgray;
+  border-radius: .2rem;
+  /*border:1px red solid;*/
+  width: 45%;
+  justify-content: center;
+  display: flex;
+  color:black;
+
+  }
+
+  .span {
+    text-decoration: none;
+  }
