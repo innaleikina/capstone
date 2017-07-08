@@ -2,6 +2,11 @@ html {
   font-size: 16px
 }
 
+body{
+  overflow-x: hidden;
+  max-width:100%;
+}
+
 .container {
   display: flex;
 }
@@ -39,8 +44,8 @@ span {
 
 /* Navigation */
 nav {
-  /*display: inline-flex;*/
-/*  border: 1px red solid;*/
+  display: inline-flex;
+  /*border: 1px red solid;*/
   width:100%;
   display: flex;
   align-content: center;
@@ -57,6 +62,7 @@ nav ul {
   align-items: center;
   /*height:64px;*/
   width:100%;
+  margin-left: 24px;
 }
 
 
@@ -87,9 +93,10 @@ ul .links {
 
 .banner {
   /*border: 1px red solid;*/
-  /*height:30rem;*/
   width:100%;
   background-color: lightgray;
+  z-index: 2;
+  border:2px solid darkgray;
   }
 
   .banner .all {
@@ -122,30 +129,35 @@ width:100%;
 }
 
 .txtbtn{
-/*  border: 1px red solid;*/
+/* border: 1px red solid;*/
   width:50%;
+  background-color: white;
 }
 
 
 .txtbtn .learn {
   font-size: 2rem;
-  justify-content: center;
+  text-align: center;
   /*border: 1px red solid;*/
-  width:auto;
-  font-family: "alfa slab one", "helvetica", sans-serif;
-  letter-spacing: .15rem;
-  color:deepskyblue;
-}
+  width:100%;
+  }
+
 
 
 .txtbtn span {
   margin-top: .8rem;
   color: dimgray;
   /*border:1px red solid;*/
+  text-align:center;
 }
 
 .txtbtn,span {
   justify-content: center;
+}
+
+.txt-btn,.start-btn{
+  justify-content: center;
+  /*border:1px red solid;*/
 }
 
 .start-btn{
@@ -163,6 +175,7 @@ width:100%;
   width: 45%;
   justify-content: center;
   display: flex;
+  box-shadow: 1px 1px gray;
 
 }
 
@@ -240,7 +253,7 @@ flex-direction: column;
 }
 
 .right-banner-img  {
-/*  border: 1px red solid;*/
+  /*border: 1px red solid;*/
   display:flex;
   max-width:35%;
   height:40%;
@@ -342,14 +355,13 @@ flex-direction: column;
   font-weight: bold;
   margin: 1rem auto;
   /*border: 1px red solid;*/
-  width:100%;
   margin-left: 1rem;
   font-size: 1.1rem;
 }
 
 .courses{
   margin: .5rem auto;
-  width:100%;
+
   margin-left: 1rem;
 }
 
