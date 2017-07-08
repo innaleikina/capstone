@@ -96,13 +96,15 @@ ul .links {
   width:100%;
   background-color: lightgray;
   z-index: 2;
-  border:2px solid darkgray;
+  border-top:1px solid darkgray;
+  border-bottom:1px solid darkgray;
   }
 
   .banner .all {
     /*border: 1px red solid;*/
     display: flex;
     flex-direction: row;
+    width:100%;
   }
 
   .image,.txtbtn{
@@ -126,6 +128,7 @@ width:100%;
 
 .all {
   display: flex;
+  width:100%;
 }
 
 .txtbtn{
@@ -368,5 +371,14 @@ flex-direction: column;
 .course-txt{
   margin-left: 1rem;
   margin-bottom: 1.5rem;
-  line-height: 1rem;
+  line-height: 1.3rem;
+  font-size: .9rem;
 }
+
+/*#courses{
+  margin-top:.05rem;
+}
+
+#course-txt {
+  margin-bottom: 1rem;
+}*/
