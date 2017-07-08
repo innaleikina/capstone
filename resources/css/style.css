@@ -6,6 +6,36 @@ html {
   display: flex;
 }
 
+ a{
+  color:skyblue;
+}
+
+a{
+  transition:.5s color linear .100ms;
+}
+
+a:hover {
+color:darkgrey;
+}
+
+span h3{
+  font-family: "gentium basic", times, serif;
+}
+
+h1  {
+  color: deepskyblue;
+  font-family: "alfa slab one", "helvetica", sans-serif;
+  letter-spacing: .15rem;
+}
+
+h3 {
+  color: deepskyblue;
+  font-weight: 700;
+}
+
+span {
+  color:dimgray;
+}
 
 /* Navigation */
 nav {
@@ -21,7 +51,6 @@ nav .links {
 /*  border: 1px red solid;*/
   display: flex;
   justify-content: flex-end;
-
 }
 
 nav ul {
@@ -35,6 +64,11 @@ nav .logo {
 display:flex;
 justify-content: flex-start;
 /*border: 1px red solid;*/
+color:dimgray;
+}
+
+#colmar{
+  font-weight: bold;
 }
 
 ul .links {
@@ -69,8 +103,6 @@ ul .links {
     flex-direction: column;
   }
 
-
-
 .image {
   display: flex;
   /*border: 1px red solid;*/
@@ -83,7 +115,6 @@ ul .links {
 .image img {
 width:100%;
 /*border: 1px red solid;*/
-
 }
 
 .all {
@@ -101,13 +132,16 @@ width:100%;
   justify-content: center;
   /*border: 1px red solid;*/
   width:auto;
+  font-family: "alfa slab one", "helvetica", sans-serif;
+  letter-spacing: .15rem;
+  color:deepskyblue;
 }
 
 
 .txtbtn span {
   margin-top: .8rem;
+  color: dimgray;
   /*border:1px red solid;*/
-
 }
 
 .txtbtn,span {
@@ -129,7 +163,7 @@ width:100%;
   width: 45%;
   justify-content: center;
   display: flex;
-  color:black;
+
 }
 
 
@@ -140,14 +174,9 @@ width:100%;
 }
 
 .information {
-  border:1px red solid;
+/*  border:1px red solid;*/
   width:100%;
-  position:static;
   height:auto;
-}
-
-.information .all {
-  border: 1px red solid;
 }
 
 
@@ -159,93 +188,173 @@ width:100%;
 
 .info-img {
   display: flex;
-  border: 1px red solid;
+  /*border: 1px red solid;*/
   margin-right:1.5rem;
   margin-left:1.5rem;
   margin-bottom: 2rem;
-
 }
 
 
 .info-img img {
 width:100%;
-border: 1px red solid;
+/*border: 1px red solid;*/
 height:100%;
 }
 
 .left-banner-two {
 flex-direction: column;
-border: 1px red solid;
-
+/*border: 1px red solid;*/
 }
 
 .left-banner-two h1 {
   font-size: 2rem;
-  margin-bottom: 2rem;
-  border: 1px red solid;
+  margin-bottom: 1.5rem;
+  /*border: 1px red solid;*/
   margin-left:1.5rem;
   margin-right: 1.5rem;
   font-weight: bold;
 }
 
 .left-banner-two span{
-  border: 1px red solid;
+/*  border: 1px red solid;*/
   margin-left:1.5rem;
   margin-right: 1.5rem;
-
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
 }
 
 
 /* Right Side */
-.right-banner-two{
+ .right-banner-two{
   flex-direction: column;
   width:435px;
-  position:relative;
 }
 
 .campus .lecture .orientation{
   flex-direction: row;
 }
 
-.campus,.lecture,.orientation{
-  border: 1px red solid;
-}
 
 .campus,.lecture {
   margin-top:2rem;
 }
 
 .right-banner-img  {
-  border: 1px red solid;
+/*  border: 1px red solid;*/
   display:flex;
   max-width:35%;
   height:40%;
   margin:1rem;
+}
 
+.orientation,.right-banner-img{
+  margin-top: 0;
 }
 
 .right-banner-img img{
  width:100%;
  height:100%;
-
-
 }
 
-/* Orientation */
 .info-txt {
   flex-direction:column;
-  border: 1px red solid;
+  /*border: 1px red solid;*/
   align-items: center;
   justify-content: center;
+  line-height: 1.2rem;
+  width:auto;
+
 }
 
 .info-txt span {
-  font-size: .8rem;
-  line-height: 1.2rem
-  border: 1px red solid;
+  font-size: .85rem;
+ /*border: 1px red solid;*/
+ margin-top: .1rem;
+ width: 100%;
+ padding-right: .5rem;
+}
+
+.info-txt .read-more{
+  margin-top: 1rem;
+  font-size: .9rem;
 }
 
 .info-txt h3 {
   font-weight: bold;
-  border: 1px red solid;
+  /*border: 1px red solid;*/
+}
+
+
+
+/* Learning */
+
+.learning {
+  flex-direction: column;
+  /*border: 1px red solid;*/
+  width:100%;
+  background-color: lightgray;
+  padding-bottom: 2rem;
+
+
+}
+
+.learning .start  {
+  font-size: 2rem;
+  font-weight: bold;
+  /*border: 1px red solid;*/
+  display: flex;
+  }
+
+  .start {
+  /*  border: 1px red solid;*/
+    display: flex;
+    color:black;
+    margin: 32px auto;
+    color:deepskyblue;
+
+ }
+
+.course {
+  flex-direction: column;
+  /*border: 1px red solid;*/
+  background-color: white;
+  width:30%;
+  height:100%;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.course-img {
+  width:100%;
+  height:35%;
+}
+
+.course-img img {
+  width:100%;
+}
+
+.row{
+  justify-content: center;
+  margin-left: 32px;
+}
+
+.course-bold {
+  font-weight: bold;
+  margin: 1rem auto;
+  /*border: 1px red solid;*/
+  width:100%;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.courses{
+  margin: .5rem auto;
+  width:100%;
+  margin-left: 1rem;
+}
+
+.course-txt{
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1rem;
 }
