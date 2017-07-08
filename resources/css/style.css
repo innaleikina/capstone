@@ -76,8 +76,8 @@ ul .links {
   /*border: 1px red solid;*/
   width:60%;
   margin-right:40px;
-  margin-left:24px;
-  margin-bottom: 32px;
+  margin-left:1.5rem;
+  margin-bottom: 2rem;
 }
 
 .image img {
@@ -116,9 +116,8 @@ width:100%;
 
 .start-btn{
   width:auto;
-  margin-top:2rem;
+  margin-top:1rem;
   /*border:1px red solid;*/
-
 }
 
 .start-btn span {
@@ -131,9 +130,122 @@ width:100%;
   justify-content: center;
   display: flex;
   color:black;
+}
 
-  }
 
-  .span {
-    text-decoration: none;
-  }
+/* Information */
+
+.info-img,.right-banner-two{
+  margin-top: 2rem;
+}
+
+.information {
+  border:1px red solid;
+  width:100%;
+  position:static;
+  height:auto;
+}
+
+.information .all {
+  border: 1px red solid;
+}
+
+
+/* Left side */
+
+.left-banner-two {
+  width:80%;
+}
+
+.info-img {
+  display: flex;
+  border: 1px red solid;
+  margin-right:1.5rem;
+  margin-left:1.5rem;
+  margin-bottom: 2rem;
+
+}
+
+
+.info-img img {
+width:100%;
+border: 1px red solid;
+height:100%;
+}
+
+.left-banner-two {
+flex-direction: column;
+border: 1px red solid;
+
+}
+
+.left-banner-two h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border: 1px red solid;
+  margin-left:1.5rem;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+.left-banner-two span{
+  border: 1px red solid;
+  margin-left:1.5rem;
+  margin-right: 1.5rem;
+
+}
+
+
+/* Right Side */
+.right-banner-two{
+  flex-direction: column;
+  width:435px;
+  position:relative;
+}
+
+.campus .lecture .orientation{
+  flex-direction: row;
+}
+
+.campus,.lecture,.orientation{
+  border: 1px red solid;
+}
+
+.campus,.lecture {
+  margin-top:2rem;
+}
+
+.right-banner-img  {
+  border: 1px red solid;
+  display:flex;
+  max-width:35%;
+  height:40%;
+  margin:1rem;
+
+}
+
+.right-banner-img img{
+ width:100%;
+ height:100%;
+
+
+}
+
+/* Orientation */
+.info-txt {
+  flex-direction:column;
+  border: 1px red solid;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-txt span {
+  font-size: .8rem;
+  line-height: 1.2rem
+  border: 1px red solid;
+}
+
+.info-txt h3 {
+  font-weight: bold;
+  border: 1px red solid;
+}
