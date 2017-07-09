@@ -4,11 +4,12 @@ html {
 
 body{
   overflow-x: hidden;
-  max-width:100%;
+ max-width:100%;
 }
 
 .container {
   display: flex;
+
 }
 
  a{
@@ -35,7 +36,7 @@ span h3{
 
 h1  {
   color: deepskyblue;
-  font-family: "alfa slab one", "helvetica", sans-serif;
+  font-family: "oswald", "helvetica", sans-serif;
   letter-spacing: .15rem;
 }
 
@@ -52,21 +53,19 @@ span {
 nav {
   display: inline-flex;
   /*border: 1px red solid;*/
-  width:100%;
   display: flex;
   align-content: center;
   height:64px;
 }
 
 nav .links {
-/*  border: 1px red solid;*/
+ /*border: 1px red solid;*/
   display: flex;
   justify-content: flex-end;
 }
 
 nav ul {
   align-items: center;
-  /*height:64px;*/
   width:100%;
   margin-left: 24px;
 }
@@ -95,6 +94,9 @@ ul .links {
 
 .links li a {
   color: deepskyblue;
+  font-weight: 400;
+  font-family: "oswald", "sans-serif";
+  letter-spacing: .1em;
 }
 
 .links li a{
@@ -117,7 +119,7 @@ color:darkgrey;
   }
 
   .banner .all {
-    /*border: 1px red solid;*/
+  /*  border: 1px red solid;*/
     display: flex;
     flex-direction: row;
     width:100%;
@@ -148,7 +150,7 @@ width:100%;
 }
 
 .txtbtn{
-/* border: 1px red solid;*/
+ /*border: 1px red solid;*/
   width:50%;
   background-color: white;
 }
@@ -206,7 +208,7 @@ width:100%;
 }
 
 .information {
-/*  border:1px red solid;*/
+/* border:1px red solid;*/
   width:100%;
   height:auto;
 }
@@ -216,6 +218,8 @@ width:100%;
 
 .left-banner-two {
   width:80%;
+  flex-direction: column;
+  /*border: 1px red solid;*/
 }
 
 .info-img {
@@ -233,10 +237,7 @@ width:100%;
 height:100%;
 }
 
-.left-banner-two {
-flex-direction: column;
-/*border: 1px red solid;*/
-}
+
 
 .left-banner-two h1 {
   font-size: 2rem;
@@ -257,6 +258,8 @@ flex-direction: column;
 
 #emanuel{
 font-weight: 700;
+font-size: .7rem;
+letter-spacing: .04rem;
 }
 
 
@@ -268,6 +271,8 @@ font-weight: 700;
 
 .campus .lecture .orientation{
   flex-direction: row;
+  /*border: 1px red solid;*/
+  width:100%;
 }
 
 
@@ -280,7 +285,7 @@ font-weight: 700;
   display:flex;
   max-width:35%;
   height:40%;
-  margin:1rem;
+  margin:1rem auto;
 }
 
 .orientation,.right-banner-img{
@@ -296,23 +301,22 @@ font-weight: 700;
   flex-direction:column;
   /*border: 1px red solid;*/
   align-items: center;
-  justify-content: center;
-  line-height: 1.2rem;
+  line-height: 1.1rem;
   width:auto;
 
 }
 
 .info-txt span {
-  font-size: .85rem;
+  font-size: .8rem;
  /*border: 1px red solid;*/
- margin-top: .1rem;
- width: 100%;
+  width: auto;
  padding-right: .5rem;
 }
 
 .info-txt .read-more{
-  margin-top: 1rem;
+  margin-top: .06rem;
   font-size: .9rem;
+  /*border: 1px red solid;*/
 }
 
 .info-txt h3 {
@@ -323,6 +327,16 @@ font-weight: 700;
 
 
 /* Learning */
+
+
+
+.row {
+  /*border:1px red solid;*/
+  height:320px;
+  margin-bottom:24px;
+  justify-content: center;
+  margin-left: 32px;
+}
 
 .learning {
   flex-direction: column;
@@ -349,8 +363,10 @@ font-weight: 700;
     margin: 32px auto;
     color:deepskyblue;
     justify-content: center;
-
- }
+    background-color: white;
+    width:100%;
+    padding: .8rem 0;
+    }
 
 .course {
   flex-direction: column;
@@ -360,6 +376,8 @@ font-weight: 700;
   height:100%;
   margin-right: 2rem;
   margin-bottom: 1rem;
+  /*margin-top:1.2rem;*/
+
 }
 
 .course-img {
@@ -381,27 +399,39 @@ font-weight: 700;
   margin: 1rem auto;
   /*border: 1px red solid;*/
   margin-left: 1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  border:.5px gray solid;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 1px 1px gray;
+  width:auto;
+  letter-spacing: .1rem;
 }
 
 .courses{
-  margin: .5rem auto;
-
+  font-weight: bold;
   margin-left: 1rem;
+  margin-top: .5rem;
+  margin-bottom:.5rem;
 }
 
 .course-txt{
   margin-left: 1rem;
-  margin-bottom: 1.5rem;
   line-height: 1.3rem;
   font-size: .9rem;
+  /*border: 1px red solid;*/
 }
 
+.courses-all-text{
+  margin-top: 2.2rem;
+  flex-direction: column;
+}
 
   /* Thesis */
 
 .thesis {
 flex-direction: row;
+/*border:1px red solid;*/
   }
 
 .width{
@@ -413,19 +443,19 @@ flex-direction: row;
   /*border:1px red solid;*/
   margin-right:1rem;
   padding-top: 0px;
-  display: flex;
+/*  display: flex;*/
+  width: auto;
 }
 
 .video video {
   padding-top:0;
-  border:1px red solid;
+  /*border:1px red solid;*/
   display:flex;
   margin-top: 0;
+  height:100%;
+  width:100%;
 }
 
-.thesis-heading{
- border:1px red solid;
-}
 
 
  /* Left Banner Last */
@@ -434,6 +464,7 @@ flex-direction: row;
   flex-direction: column;
   /*border:1px red solid;*/
   margin-left: 1.5rem;
+  width:80%;
 }
 
 #thesis-heading {
@@ -443,13 +474,11 @@ flex-direction: row;
   width:auto;
 }
 
-.reimagine-span{
-/*  border:1px red solid;*/
-}
+
 
 .left-banner-last .reimagine-span {
   text-align:left;
-/*border:1px red solid;*/
+  /*border:1px red solid;*/
   width:100%;
   margin-bottom: 2rem;
 }
@@ -458,5 +487,44 @@ flex-direction: row;
   text-align:center;
   /*border:1px red solid;*/
   width:auto;
-  margin:2rem auto;
+  margin-bottom:1rem;
+  margin-top:2rem;
+}
+
+
+/* Right Banner Last*/
+
+.right-banner-last {
+  width:435px;
+  flex-direction: column;
+}
+
+.info-txt,h3 {
+  /*border:1px red solid;*/
+  text-align: left;
+  width:100%;
+  padding-left: 1rem;
+  line-height: 1.2rem;
+}
+
+.info-txt span {
+  /*border:1px red solid;*/
+  text-align: left;
+  width:100%;
+  padding-left: 1rem;
+}
+
+
+.right-banner-last-img  {
+  max-width:35%;
+  height: 40%;
+/*  border:1px red solid;*/
+}
+
+.right-banner-last-img img{
+  width: 100%;
+  height:100%;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  /*border:1px red solid;*/
 }
