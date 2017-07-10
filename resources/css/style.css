@@ -387,7 +387,7 @@ letter-spacing: .04rem;
 
 .course-img {
   max-width:100%;
-  max-height:35%;
+
   /*border: 1px red solid;*/
 
 }
@@ -430,7 +430,7 @@ letter-spacing: .04rem;
 }
 
 .courses-all-text{
-  margin-top: 4.2rem;
+  /*margin-top: 4.2rem;*/
   flex-direction: column;
   border:1px red solid;
   padding-bottom: 2rem;
