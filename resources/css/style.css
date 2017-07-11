@@ -1,11 +1,18 @@
 html {
   font-size: 16px
+  padding:0;
+  margin:0;
 }
 
 body{
  overflow-x: hidden;
  max-width:100%;
  margin:0;
+}
+
+ul{
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .container {
@@ -50,7 +57,7 @@ span {
   color:dimgray;
 }
 
-/* Navigation */
+/*-------------------- Navigation-------------------------- */
 
 .mobile-nav {
   display: none;
@@ -74,9 +81,8 @@ nav ul {
 
 .logo .academy {
   /*border:1px red solid;*/
-  left: 0;
+  margin-left:1rem;
   align-items: center;
-  justify-content: flex-start;
   width:100%;
 }
 
@@ -100,7 +106,6 @@ nav .links {
 
 ul .links {
   display: flex;
-  /*justify-content: flex-end;*/
   width:100%;
 }
 
@@ -124,12 +129,13 @@ color:darkgrey;
 }
 
 
-
 @media only screen and (max-width: 768px){
 
+.logo .academy{
+  margin-left:1rem;
+  }
 
-
-  nav{
+nav{
     width:100%;
   }
 
@@ -142,12 +148,24 @@ ul .links {
     justify-content: space-between;
     width:100%;
     margin-left: 2rem;
+    margin-right: 1rem;
   }
-}
+  }
+
+  @media only screen and (max-width: 480px){
+
+  .logo-words{
+    display:none;
+  }
+
+  .logo .academy {
+    margin-left: 1rem;
+  }
+  }
 
 
 
-/* Banner */
+/*-------------------- Banner-------------------------- */
 
 .banner {
 /*  border: 1px red solid;*/
@@ -202,11 +220,12 @@ width:100%;
   width:100%;
   }
 
-.txtbtn span {
+.txtbtn .span {
   margin-top: .8rem;
   color: dimgray;
   /*border:1px red solid;*/
   text-align:center;
+  margin-left: 2rem;
 }
 
 .txtbtn,span {
@@ -236,12 +255,18 @@ width:100%;
   box-shadow: 1px 1px gray;
   }
 
-  @media only screen and (max-width: 768px){
 
+  @media only screen and (max-width: 768px){
 
   .image {
     width:100%;
-    margin:1rem;
+  /*border:1px red solid;*/
+    align-items:center;
+  }
+
+  .image img{
+    align-content:center;
+  /*border:1px red solid;*/
   }
 
   .txtbtn {
@@ -264,6 +289,10 @@ width:100%;
 }
 
 @media only screen and (max-width: 480px){
+.start-btn{
+  padding-bottom: 2rem;
+}
+
 .banner .all{
   flex-direction: column;
 }
@@ -271,6 +300,7 @@ width:100%;
 .image {
   width:100%;
   margin: 0;
+  padding-bottom: 2rem;
 }
 
 .txtbtn {
@@ -287,7 +317,7 @@ width:100%;
 
 
 
-/* Information */
+/*--------------------- Information-------------------- */
 
 .info-img,.right-banner-two{
   margin-top: 2rem;
@@ -300,7 +330,7 @@ width:100%;
 }
 
 
-/* Left side */
+/*----------------------- Left side------------------ */
 
 .left-banner-two {
   width:80%;
@@ -350,8 +380,14 @@ font-size: .7rem;
 letter-spacing: .04rem;
 }
 
+  @media only screen and (max-width: 768px){
+    .practice {
+      font-size: 1.5rem !important;
+    }
+  }
 
-/* Right Side */
+
+/*---------------- Right Side--------------------- */
  .right-banner-two{
   flex-direction: column;
   width:435px;
@@ -419,12 +455,17 @@ letter-spacing: .04rem;
 .left-banner-two{
   display:none;
 }
+
+.right-banner-two {
+  padding-bottom: 2rem;
+  padding-top:2rem;
+}
 }
 
 
 
 
-/* Learning */
+/*------------------ Learning------------------ */
 
 
 .row {
@@ -439,46 +480,55 @@ letter-spacing: .04rem;
   }
 
   @media only screen and (max-width: 480px){
-    .mobile-learning {
+
+     .mobile-learning {
+      margin-top: 0;
       display:flex;
-      border:1px red solid;
-    
-    }
+    /*border:1px red solid;*/
+      padding-bottom: 2rem;
+      border-bottom:.5px solid gray;
+
+     }
+
+     .mobile-learning .mobile-column-learning{
+       width:100%;
+     }
 
     .mobile-column-learning{
+      display:flex;
       flex-direction: column;
-      width:auto;
-      border:1px red solid
-      left:0;
-      justify-content: center;
       width:100%;
-    }
+      /*border:1px red solid;*/
+      justify-content: center;
+      width:auto;
+      }
 
     .mobile-column-learning ul {
-      left: 0;
-      border:1px red solid;
+    /*  border:1px red solid;*/
       justify-content: center;
-    }
-
-    ul li  {
       width:100%;
-      border:1px red solid;
-    }
+      background-color:lightgray;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      margin-top: 0;
+     }
 
 
-    .mobile-column-learning li{
-      width:100%;
-      left:0;
+     .mobile-column-learning li{
+      width:auto;
       padding:1rem;
-      margin: .5rem auto;
-      border:2px solid darkgray;
+      margin: .5rem 1rem;
+      border:1px solid darkgray;
       border-radius: 5px;
-      box-shadow: .5px .5px gray;
+      box-shadow: 1px .5px gray;
       color:deepskyblue;
       font-size: .95rem;
       font-weight: bold;
       letter-spacing: .1rem;
-     }
+      background-color: white;
+      }
+
+
 
     .learning{
       display:none;
@@ -497,8 +547,7 @@ letter-spacing: .04rem;
 
 
   .start {
-
-    display: flex;
+   display: flex;
     margin: 2rem auto;
     color:deepskyblue;
     justify-content: center;
@@ -506,7 +555,6 @@ letter-spacing: .04rem;
     width:100%;
     font-size: 2rem;
     font-weight: bold;
-
     }
 
 .course {
@@ -552,8 +600,6 @@ img:hover{
   width:auto;
 }
 
-
-
 .courses{
   font-style: italic;
   margin-left: 1rem;
@@ -574,7 +620,6 @@ img:hover{
   padding-bottom: 2rem;
   max-width:100%;
   position: relative;
-
 }
 
 @media only screen and (max-width: 1024px){
@@ -601,9 +646,9 @@ img:hover{
 }
 }
 
-@media only screen and (max-width: 480px){}
 
-  /* Thesis */
+
+  /*----------------------- Thesis-------------------- */
 
 
 
@@ -634,9 +679,34 @@ flex-direction: row;
   width:100%;
 }
 
+.mobile-video{
+  display:none;
+}
+
+@media only screen and (max-width: 480px){
+  .thesis {
+    display:none;
+    }
 
 
- /* Left Banner Last */
+  .mobile-video {
+    display: flex;
+    width:auto;
+    padding-bottom: 1.5rem;
+    margin-top: 0;
+  }
+
+  .mobile-video video {
+    padding-top:0;
+    /*border:1px red solid;*/
+    display:flex;
+    margin-top: 0;
+    height:100%;
+    width:100%;
+  }
+}
+
+ /*------------------ Left Banner Last---------------- */
 
 .left-banner-last {
   flex-direction: column;
@@ -654,7 +724,6 @@ flex-direction: row;
 }
 
 
-
 .left-banner-last .reimagine-span {
   text-align:left;
   /*border:1px red solid;*/
@@ -664,12 +733,10 @@ flex-direction: row;
 
 .reimagine-span {
   flex-direction: column;
-
 }
 
 .reimagine-span span{
   width: 80%;
-
   /*border:1px red solid;*/
 }
 
@@ -683,7 +750,7 @@ flex-direction: row;
 }
 
 
-/* Right Banner Last*/
+/*---------------- Right Banner Last--------------*/
 
 .right-banner-last {
   width:435px;
@@ -722,7 +789,7 @@ flex-direction: row;
 
 
 
-/* Footer */
+/* -------------------Footer------------------ */
 
 footer {
   width:100%;
@@ -741,9 +808,25 @@ footer span{
 footer .terms-privacy {
   /*border:1px red solid;*/
  justify-content: flex-end;
-
 }
 
 .terms-privacy span{
   margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 480px){
+  footer {
+    padding-top: 1rem;
+    padding-bottom:1rewidth:100%;
+  }
+
+.footer span{
+  width:100%;
+  text-align: center;
+}
+
+.terms-privacy{
+  display:none;
+
+}
 }
