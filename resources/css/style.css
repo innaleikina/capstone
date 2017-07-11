@@ -359,7 +359,8 @@ letter-spacing: .04rem;
 /*  border: 1px red solid;*/
   width:100%;
   background-color: lightgray;
-  padding-top:1.8rem;
+  padding-top:2rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -420,7 +421,7 @@ img:hover{
 
 
 .courses{
-  font-weight: bold;
+  font-style: italic;
   margin-left: 1rem;
   margin-bottom:.5rem;
   font-size: .9rem;
@@ -504,6 +505,7 @@ flex-direction: row;
   /*border:1px red solid;*/
   margin-left: 1.5rem;
   width:80%;
+
 }
 
 #thesis-heading {
@@ -522,12 +524,24 @@ flex-direction: row;
   margin-bottom: 2rem;
 }
 
+.reimagine-span {
+  flex-direction: column;
+
+}
+
+.reimagine-span span{
+  width: 80%;
+
+  /*border:1px red solid;*/
+}
+
 .left-banner-last .reimagine{
   text-align:center;
   /*border:1px red solid;*/
   width:auto;
   margin-bottom:1rem;
   margin-top:1rem;
+
 }
 
 
