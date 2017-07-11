@@ -683,6 +683,7 @@ flex-direction: row;
   display:none;
 }
 
+
 @media only screen and (max-width: 480px){
   .thesis {
     display:none;
@@ -705,6 +706,8 @@ flex-direction: row;
     width:100%;
   }
 }
+
+
 
  /*------------------ Left Banner Last---------------- */
 
