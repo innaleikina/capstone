@@ -123,11 +123,11 @@ ul .links {
 color:darkgrey;
 }
 
-@media only screen and (max-width: 480px){
 
-  body{
-    overflow-x: scroll;
-  }
+
+@media only screen and (max-width: 768px){
+
+
 
   nav{
     width:100%;
@@ -144,6 +144,8 @@ ul .links {
     margin-left: 2rem;
   }
 }
+
+
 
 /* Banner */
 
@@ -232,6 +234,33 @@ width:100%;
   justify-content: center;
   display: flex;
   box-shadow: 1px 1px gray;
+  }
+
+  @media only screen and (max-width: 768px){
+
+
+  .image {
+    width:100%;
+    margin:1rem;
+  }
+
+  .txtbtn {
+    width:100%;
+    padding-bottom: 1rem;
+    /*border:1px red solid;*/
+   }
+
+   .learn{
+    margin-top: 0;
+    font-size: 1.5rem !important;
+
+  }
+
+  .txtbtn .span {
+    width:100%;
+    padding: .2rem auto;
+    /*border:1px red solid;*/
+  }
 }
 
 @media only screen and (max-width: 480px){
@@ -254,6 +283,10 @@ width:100%;
   margin-top: 0;
 }
 }
+
+
+
+
 /* Information */
 
 .info-img,.right-banner-two{
@@ -394,13 +427,62 @@ letter-spacing: .04rem;
 /* Learning */
 
 
-
 .row {
   /*border:1px red solid;*/
   margin-bottom:24px;
   justify-content: center;
   margin-left: 32px;
+  }
 
+  .mobile-learning {
+    display:none;
+  }
+
+  @media only screen and (max-width: 480px){
+    .mobile-learning {
+      display:flex;
+      border:1px red solid;
+    
+    }
+
+    .mobile-column-learning{
+      flex-direction: column;
+      width:auto;
+      border:1px red solid
+      left:0;
+      justify-content: center;
+      width:100%;
+    }
+
+    .mobile-column-learning ul {
+      left: 0;
+      border:1px red solid;
+      justify-content: center;
+    }
+
+    ul li  {
+      width:100%;
+      border:1px red solid;
+    }
+
+
+    .mobile-column-learning li{
+      width:100%;
+      left:0;
+      padding:1rem;
+      margin: .5rem auto;
+      border:2px solid darkgray;
+      border-radius: 5px;
+      box-shadow: .5px .5px gray;
+      color:deepskyblue;
+      font-size: .95rem;
+      font-weight: bold;
+      letter-spacing: .1rem;
+     }
+
+    .learning{
+      display:none;
+    }
   }
 
 .learning {
