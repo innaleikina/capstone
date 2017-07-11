@@ -1,7 +1,6 @@
 html {
   font-size: 16px
-  padding:0;
-  margin:0;
+
 }
 
 body{
@@ -65,7 +64,7 @@ span {
 
 nav {
   display:flex;
-  border: 1px red solid;
+  /*border: 1px red solid;*/
   display: flex;
   align-content: center;
   height:4rem;
@@ -260,25 +259,25 @@ width:100%;
 
   .image {
     width:100%;
-    border:1px red solid;
+    /*border:1px red solid;*/
     align-items:center;
   }
 
   .image img{
     align-content:center;
-    border:1px red solid;
+  /*  border:1px red solid;*/
   }
 
   .txtbtn {
     width:100%;
     padding-bottom: 1rem;
-    border:1px red solid;
+  /*  border:1px red solid;*/
    }
 
    .learn{
     margin-top: 0;
     font-size: 1.5rem !important;
-    border:1px red solid;
+    /*border:1px red solid;*/
     width:auto;
 
   }
@@ -286,42 +285,42 @@ width:100%;
   .txtbtn .span {
     width:auto;
     padding: .2rem auto;
-    border:1px red solid;
+  /*  border:1px red solid;*/
   }
 }
 
 @media only screen and (max-width: 480px){
 html{
   right:0;
+  overflow-x: hidden;
+
 }
 
 .start-btn{
   padding-bottom: 2rem;
-  border:1px red solid;
+  /*border:1px red solid;*/
 }
 
 .banner .all{
   flex-direction: column;
-  border:1px red solid;
+  /*border:1px red solid;*/
 }
 
 .image {
   width:100%;
   margin: 0;
   padding-bottom: 2rem;
-  border:1px red solid;
+  /*border:1px red solid;*/
 }
 
 .txtbtn {
   width:100%;
   padding-bottom: 1rem;
-  border:1px red solid;
-  /*border:1px red solid;*/
- }
+}
 
 .learn{
   margin-top: 0;
-  border:1px red solid;
+  /*border:1px red solid;*/
   width:90%;
 }
 }
