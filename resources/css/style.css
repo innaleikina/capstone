@@ -52,6 +52,9 @@ span {
 
 /* Navigation */
 
+.mobile-nav {
+  display: none;
+}
 
 nav {
   display:flex;
@@ -120,10 +123,32 @@ ul .links {
 color:darkgrey;
 }
 
+@media only screen and (max-width: 480px){
+
+  body{
+    overflow-x: scroll;
+  }
+
+  nav{
+    width:100%;
+  }
+
+ul .links {
+    display:none;
+  }
+
+  .mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-left: 2rem;
+  }
+}
+
 /* Banner */
 
 .banner {
-  /*border: 1px red solid;*/
+/*  border: 1px red solid;*/
   width:100%;
   background-color: lightgray;
   z-index: 2;
@@ -132,7 +157,7 @@ color:darkgrey;
   }
 
   .banner .all {
-  /*  border: 1px red solid;*/
+  /* border: 1px red solid;*/
     display: flex;
     flex-direction: row;
     width:100%;
@@ -145,7 +170,7 @@ color:darkgrey;
 
 .image {
   display: flex;
-  /*border: 1px red solid;*/
+/*  border: 1px red solid;*/
   width:60%;
   margin-right:40px;
   margin-left:1.5rem;
@@ -168,15 +193,12 @@ width:100%;
   background-color: white;
 }
 
-
 .txtbtn .learn {
   font-size: 2rem;
   text-align: center;
   /*border: 1px red solid;*/
   width:100%;
   }
-
-
 
 .txtbtn span {
   margin-top: .8rem;
@@ -210,10 +232,28 @@ width:100%;
   justify-content: center;
   display: flex;
   box-shadow: 1px 1px gray;
-
 }
 
+@media only screen and (max-width: 480px){
+.banner .all{
+  flex-direction: column;
+}
 
+.image {
+  width:100%;
+  margin: 0;
+}
+
+.txtbtn {
+  width:100%;
+  padding-bottom: 1rem;
+  /*border:1px red solid;*/
+ }
+
+.learn{
+  margin-top: 0;
+}
+}
 /* Information */
 
 .info-img,.right-banner-two{
@@ -342,6 +382,14 @@ letter-spacing: .04rem;
 }
 
 
+@media only screen and (max-width: 480px){
+.left-banner-two{
+  display:none;
+}
+}
+
+
+
 
 /* Learning */
 
@@ -352,6 +400,7 @@ letter-spacing: .04rem;
   margin-bottom:24px;
   justify-content: center;
   margin-left: 32px;
+
   }
 
 .learning {
@@ -361,6 +410,7 @@ letter-spacing: .04rem;
   background-color: lightgray;
   padding-top:2rem;
   padding-bottom: 2rem;
+  height:auto;
 }
 
 
@@ -383,6 +433,7 @@ letter-spacing: .04rem;
   background-color: white;
   width:30%;
   margin-right: 2rem;
+
 }
 
 
@@ -406,6 +457,7 @@ img:hover{
 .course-bold {
   font-weight: bold;
   font-size: 1.2rem;
+  padding-left: 1rem;
 }
 
 .course-bold a{
@@ -448,15 +500,15 @@ img:hover{
   .learning{
     flex-direction: row;
     justify-content: center;
+    height:70rem;
+    width:100%;
   }
-
-
 
 .row{
   flex-direction: column;
   /*border:1px red solid;*/
   width: 40%;
-  height:auto;
+  height:70rem;
 }
 
 .course {
@@ -466,6 +518,10 @@ img:hover{
   margin-bottom:1rem;
 }
 }
+
+@media only screen and (max-width: 480px){
+
+  /* Thesis */
 
   /* Thesis */
 
@@ -581,6 +637,7 @@ flex-direction: row;
   margin-bottom: 24px;
   /*border:1px red solid;*/
 }
+
 
 
 /* Footer */
