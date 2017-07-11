@@ -4,8 +4,8 @@ html {
 }
 
 body{
- /*overflow-x: hidden;*/
- max-width:100%;
+ overflow-x: hidden;
+ width:100%;
  margin:0;
 }
 
@@ -292,8 +292,6 @@ width:100%;
 @media only screen and (max-width: 480px){
 html{
   right:0;
-  overflow-x: hidden;
-
 }
 
 .start-btn{
@@ -692,6 +690,11 @@ flex-direction: row;
 
 .mobile-video{
   display:none;
+}
+
+#thesis-heading{
+  font-size:2rem;
+  font-weight: bold;
 }
 
 
