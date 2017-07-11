@@ -519,11 +519,11 @@ img:hover{
 }
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px){}
 
   /* Thesis */
 
-  /* Thesis */
+
 
 .thesis {
 flex-direction: row;
