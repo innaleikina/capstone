@@ -1,22 +1,13 @@
 html {
   font-size: 16px
-
 }
 
-body{
- overflow-x: hidden;
- width:100%;
- margin:0;
-}
 
-ul{
-  margin-left: 0;
-  padding-left: 0;
-}
 
 .container {
   display: flex;
-
+  /*border: 1px red solid;*/
+  width: 100%;
 }
 
  a{
@@ -478,10 +469,11 @@ letter-spacing: .04rem;
 
 
 .row {
-  /*border:1px red solid;*/
+  border:1px red solid;
   margin-bottom:24px;
   justify-content: center;
   margin-left: 32px;
+  width:auto;
   }
 
   .mobile-learning {
