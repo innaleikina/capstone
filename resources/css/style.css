@@ -1,13 +1,13 @@
 html {
-  font-size: 16px
+  font-size: 16px;
+  overflow-x: hidden;
 }
-
-
 
 .container {
   display: flex;
   /*border: 1px red solid;*/
-  width: 100%;
+  max-width: 100%;
+
 }
 
  a{
@@ -469,7 +469,7 @@ letter-spacing: .04rem;
 
 
 .row {
-  border:1px red solid;
+  /*border:1px red solid;*/
   margin-bottom:24px;
   justify-content: center;
   margin-left: 32px;
@@ -589,6 +589,7 @@ img:hover{
   font-weight: bold;
   font-size: 1.2rem;
   padding-left: 1rem;
+  margin-top: 1rem;
 }
 
 .course-bold a{
@@ -606,6 +607,7 @@ img:hover{
   margin-left: 1rem;
   margin-bottom:.5rem;
   font-size: .9rem;
+  margin-top:1rem;
 }
 
 .course-txt{
