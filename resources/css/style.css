@@ -855,6 +855,10 @@ footer .terms-privacy {
     width:100%;
   }
 
+  #footer-copyright{
+    font-size: .8rem;
+  }
+
 .footer span{
   width:100%;
 }
