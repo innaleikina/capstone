@@ -1,6 +1,6 @@
 html {
   font-size: 16px;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 .container {
@@ -398,7 +398,7 @@ letter-spacing: .04rem;
 .campus .lecture .orientation{
   flex-direction: row;
   /*border: 1px red solid;*/
-  width:100%;
+  width:auto;
 }
 
 
@@ -428,28 +428,40 @@ letter-spacing: .04rem;
   /*border: 1px red solid;*/
   align-items: center;
   line-height: 1.1rem;
-  width:auto;
+  width:100%;
+  text-align: left;
 
 }
 
-.info-txt span {
-  font-size: .8rem;
+.info-txt .h-three{
+  width:100%;
+  font-weight: bold;
+  font-size:.85rem;
+  /*border: 1px red solid;*/
+  text-align: left;
+  color:deepskyblue;
+}
+
+.info-txt,p {
+font-size: .8rem;
  /*border: 1px red solid;*/
-  width: auto;
+ width:100%;
  padding-right: .5rem;
+ margin-bottom:.3rem;
 }
 
 .info-txt .read-more{
   margin-top: .06rem;
   font-size: .9rem;
+  width:100%;
   /*border: 1px red solid;*/
 }
 
-.info-txt h3 {
-  font-weight: bold;
-  /*border: 1px red solid;*/
-}
-
+/*.info-txt,.info-text-span{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+}*/
 
 @media only screen and (max-width: 480px){
 .left-banner-two{
@@ -841,3 +853,9 @@ footer .terms-privacy {
 
 }
 }
+
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}*/
