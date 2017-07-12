@@ -1,13 +1,10 @@
 html {
   font-size: 16px;
-  /*overflow-x: hidden;*/
 }
 
 .container {
   display: flex;
   /*border: 1px red solid;*/
-  max-width: 100%;
-
 }
 
  a{
@@ -478,7 +475,7 @@ font-size: .8rem;
 
 
 
-/*------------------ Learning------------------ */
+/*------------------ Courses------------------ */
 
 
 .row {
@@ -586,6 +583,8 @@ img:hover{
 }
 
 @media only screen and (max-width: 1024px){
+
+
 
   .learning{
     flex-direction: row;
@@ -822,7 +821,6 @@ flex-direction: row;
 footer {
   width:100%;
   border-top:.5px darkgray solid;
-  justify-content: space-between;
   padding-top:1.2rem;
   padding-bottom: 1.4rem;
 }
@@ -830,33 +828,44 @@ footer {
 footer span{
   margin-left:1.5rem;
   font-size: .9rem;
+  width:100%;
+}
+
+footer .icon {
+/*border:1px red solid;  */
+padding-right: 1rem;
+color:deepskyblue;
 }
 
 
 footer .terms-privacy {
-  /*border:1px red solid;*/
+ /*border:1px red solid;*/
  justify-content: flex-end;
 }
 
-.terms-privacy span{
-  margin-right: 1.5rem;
+.privacy{
+  margin-right: 1rem;
 }
+
 
 @media only screen and (max-width: 480px){
   footer {
     padding-top: 1rem;
-    padding-bottom:1rewidth:100%;
+    padding-bottom:1rem;
+    width:100%;
   }
 
 .footer span{
   width:100%;
-  text-align: center;
 }
 
-.terms-privacy{
+ .privacy {
   display:none;
-
 }
+
+.icons {
+  display:flex;
+ }
 }
 
 /** {
